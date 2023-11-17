@@ -1,0 +1,1 @@
+:'<,'>norm ^1f,a"accid":^[1f,a"apikey":^[1f,a"OnOff"

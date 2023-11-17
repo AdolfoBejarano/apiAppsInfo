@@ -1,0 +1,1 @@
+https://www.airplane.dev/blog/replacing-cron-with-scheduled-tasks-in-airplane

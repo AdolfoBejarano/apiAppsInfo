@@ -1,0 +1,30 @@
+Using postman CLI in my Windows 10 PC
+
+When using "postman collection run" command in Postman to run a collection run to GET accounts API keys thru Infobip's API
+
+Postman CLI, is not pulling data set (basic authentication & account Key data) from local file (PC folder/file) resulting in [401 Unauthorized, 358B, 913ms]
+
+Here are the three command lines entered to Postman CLI:
+
+postman login --with-api-key PMAK-64f0dea10af24f0038a8a611-4e15ca635c8e992e06b5740f4839100fa0
+postman collection run C:\API\IS/myCollectionFile_16r.json
+postman collection run 7504733-c945fe0b-e7f8-4b70-b777-cd38f7933d47 -e 7504733-a794f7b8-a6af-4a13-8463-a35872365310
+
+Here the collection run results:
+
+Postman CLI run data uploaded to Postman Cloud successfully.
+You can view the run data in Postman at: https://go.postman.co/workspace/901adea9-72a9-4809-8170-0d0159447eee/run/7504733-dff94caf-dece-4600-9318-10dc24fd7894
+
+Please let me know what should I do in order to run this collection propertly thru Postman CLI
+
+PD: Attached are several files/screenshots, among them the actual data set file
+
+Cordially,
+
+Ing. Adolfo Bejarano Forero
+MAGRAVIS SAS
+RL
+Cel/Wapp: +57 317 427 7789
+a.bejarano@magravis.com
+www.magravis.com
+NIT 900.616.037-1

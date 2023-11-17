@@ -1,0 +1,12 @@
+Node.js v.18.17.0
+Npm v10.1.0
+airplane cli iwr link
+Airplane CLI - Airplane Docs
+https://docs.airplane.dev/platform/airplane-cli
+iwr https://github.com/airplanedev/cli/releases/latest/download/install.ps1 -useb | iex
+airplane login
+airplane -v
+pm install airplane
+airplane tasks init --inline
+airplane dev
+airplane dev --env prod

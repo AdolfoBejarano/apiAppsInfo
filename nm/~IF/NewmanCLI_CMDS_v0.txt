@@ -1,0 +1,31 @@
+postman login --with-api-key PMAK-64f0dea10af24f0038a8a611-4e15ca635c8e992e06b5740f4839100fa0
+postman collection run 7504733-988fc9fb-2e55-4259-a364-112d83dcf1f3 -e 7504733-a794f7b8-a6af-4a13-8463-a35872365310
+
+newman run collection.json - insecure -d Cookie.json --reporters html,cli --reporter-html-export C:\API\IS\Collections\report.html --reporter-html-template C:\API\IS\Collections\template-default.hbs
+
+newman run collection.json - insecure -d Cookie.json -r htmlextra
+
+newman run collection.json - insecure -d Cookie.json -r htmlextra --reporter-html-export C:\API\IS\Collections\report.html
+
+newman run collection.json -d Cookie.json -r htmlextra --reporter-htmlextra-export ./results/report.html
+
+newman run collection.json -d Cookie.json -r htmlextra --reporter-htmlextra-export ./results/report.html --reporter-htmlextra-template ./template.hbs
+
+
+newman run collection.json -d Cookie.json -r htmlextra --reporter-htmlextra-export ./results/report.html --reporter-htmlextra-template ./template.hbs --reporter-htmlextra-testPaging
+
+newman run collection.json -d Cookie.json -r htmlextra --reporter-htmlextra-export ./results/report.html --reporter-htmlextra-testPaging
+
+newman run collection.json -d Cookie.json -r htmlextra --reporter-htmlextra-export ./results/report.html --reporter-htmlextra-template ./template.hbs --reporter-htmlextra-omitRequestBodies
+
+newman run collection.json -d Cookie.json
+
+newman run collection.json -d Cookie.json -r htmlextra --timeout-request 1000<ms> --reporter-htmlextra-export ./results/report.html --reporter-htmlextra-template ./template.hbs --reporter-htmlextra-omitRequestBodies
+
+newman run collection.json -d Cookie-01.json -r htmlextra --timeout-request 2000 --reporter-htmlextra-export ./results/report.html --reporter-htmlextra-template ./template.hbs --reporter-htmlextra-omitRequestBodies
+
+newman run collection.json -d Cookie-pn.json -r htmlextra --timeout-request 2000 --reporter-htmlextra-export ./results/report.html --reporter-htmlextra-template ./template.hbs --reporter-htmlextra-omitRequestBodies
+
+newman run collection.json -d Cookie-00.json -r htmlextra --timeout-request 2000 --reporter-htmlextra-export ./results/report.html --reporter-htmlextra-template ./template.hbs --reporter-htmlextra-omitRequestBodies
+
+newman run collection.json -r htmlextra --timeout-request 1000 --reporter-htmlextra-export ./results/report.html --reporter-htmlextra-template ./template.hbs --reporter-htmlextra-omitRequestBodies

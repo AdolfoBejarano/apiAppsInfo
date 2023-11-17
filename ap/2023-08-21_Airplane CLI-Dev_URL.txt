@@ -1,0 +1,59 @@
+Airplane CLI
+https://docs.airplane.dev/platform/airplane-cli
+1)iwr https://github.com/airplanedev/cli/releases/latest/download/install.ps1 -useb | iex
+2)airplane login
+3)airplane auth info
+4)airplane update
+5)$ airplane dev
+6)https://app.airplane.dev/studio?host=http://localhost:4000
+===================================================================================================================================================
+Airplane CLI
+The Airplane CLI, airplane, is the primary way you'll create and deploy new tasks. The CLI also provides utility methods for managing API keys, getting/setting configs, and executing tasks.
+===================================================================================================================================================
+Installing the CLI
+macOS
+Linux
+Windows
+You can install the CLI from PowerShell with our installation script:
+bash
+
+Copied
+1)***iwr https://github.com/airplanedev/cli/releases/latest/download/install.ps1 -useb | iex
+===================================================================================================================================================
+Once you've installed it, you can log in to the CLI by running login. This will open a browser window to complete authentication—you can close the window when you're done.
+bash
+
+Copied
+2)***airplane login
+# If you want to change teams or log out: airplane logout
+===================================================================================================================================================
+To confirm you're logged in, you can run airplane auth info:
+
+Copied
+3)***airplane auth info
+  Signed in as youremail@example.com
+  Using team MyTeam (ID: 1rGi5xu8bPuxT8TV0KKwP10RQuD)
+===================================================================================================================================================
+Updating the CLI
+To update the CLI, run the following:
+
+Copied
+4)***airplane update
+The airplane update command was added in v0.3.172 (August 9th, 2023). If you get an Unknown command "update" for "airplane" error, you should upgrade the CLI by instead re-running the installation command.
+===================================================================================================================================================
+Local development with Studio
+The Airplane Studio provides a rich local development experience that allows you to quickly iterate on Tasks and Views, even before they've been deployed.
+===================================================================================================================================================
+Starting the studio
+Airplane studio can be started with airplane dev:
+bash
+
+Copied
+5)***$ airplane dev
+Discovering tasks and views...registered 2 tasks and 1 view.
+
+6)***Started studio session at https://app.airplane.dev/studio?host=http://localhost:4000 (^C to quit)
+Press ENTER to open the studio in the browser.
+===================================================================================================================================================
+See Local development with Studio for more info.
+===================================================================================================================================================
