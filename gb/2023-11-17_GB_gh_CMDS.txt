@@ -1,0 +1,45 @@
+Kevin Stratver YouTube Video
+How to use Git Bash & Git Hub
+https://www.youtube.com/watch?v=tRZGeaHPoaw
+GH FEATURES/OPTIONS WALK THRU
+-set issues
+-set pull requests
+NEW LOCAL REPO CONFIG/CREATE
+git config --global user.name "Ing. Adolfo Bejarano Forero"
+git config --global user.email "a.bejarano@magravis.com"
+git config --global init.default branch main
+git init
+ADD & COMMINT FILES TO GB
+git status
+git add -A
+git commit -m “my comment here”
+BRANCHES
+git branch
+git branch <new branch name>
+git switch <branch name>
+git switch -c <branch name>
+GH NEW REMOTE REPO
+-inst to create new local repo with gb
+-inst to push an existing local repo to gh
+SYNC EXISTING LOCAL REPO TO GH
+git remote add origin <your gh repo url>
+git remote -v
+git branch -M main
+git push -u origin main
+PULL CHANGES FROM GH TO OUR LOCAL REPO
+git fetch
+git merge
+git pull
+PUSH THE MAIN BRANCH TO REMOTE/GH
+git remote add https://github.com/AdolfoBejarano/apiIS.git
+git remote -v
+git push -u origin main
+REMOTE ORIGIN CMDS
+*git remote add origin error: remote origin already exists
+*git remote -v
+git add remote origin
+git remote rename origin <new-name>
+git remote set-url origin <new-url>
+git remote remove origin
+*git remote-v
+*git remote add origin <your remote repo url>
