@@ -21,7 +21,7 @@ git switch -c <branch name>
 GH NEW REMOTE REPO
 -inst to create new local repo with gb
 -inst to push an existing local repo to gh
-SYNC EXISTING LOCAL REPO TO GH
+SYNC EXISTING/NEW LOCAL REPO TO GH
 git remote add origin <your gh repo url>
 git remote -v
 git branch -M main
@@ -30,7 +30,7 @@ PULL CHANGES FROM GH TO OUR LOCAL REPO
 git fetch
 git merge
 git pull
-PUSH THE MAIN BRANCH TO REMOTE/GH
+PUSH/SYNC THE MAIN BRANCH TO REMOTE/GH
 git remote add https://github.com/AdolfoBejarano/apiIS.git
 git remote -v
 git push -u origin main
